@@ -1,0 +1,13 @@
+<script>
+    var userAgent = navigator.userAgent;
+
+    if (/iP(hone|ad)/i.test(userAgent)) {
+        window.location.href = "https://ios.example.com";
+    } 
+    else if (/Android/i.test(userAgent)) {
+        window.location.href = "https://android.example.com";
+    } 
+    else {
+        window.location.href = "https://desktop.example.com";
+    }
+</script>
